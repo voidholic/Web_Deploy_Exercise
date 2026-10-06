@@ -387,13 +387,13 @@ const guardarCuenta = () => {
       telefono: sesion.telefono, direccion: sesion.direccion,
       verificado: sesion.verificado, sesionAbierta: sesion.dentro,
     }));
-  } catch (e) { /* en ventana privada no se puede guardar; la sesion sigue viva en memoria */ }
+  } catch { /* en ventana privada no se puede guardar; la sesion sigue viva en memoria */ }
 };
 const correoGuardado = () => {
   try {
     const crudo = window.localStorage.getItem(CLAVE_CUENTA);
     return crudo ? String(JSON.parse(crudo).correo || '') : '';
-  } catch (e) { return ''; }
+  } catch { return ''; }
 };
 const leerCuenta = () => {
   try {
@@ -409,7 +409,7 @@ const leerCuenta = () => {
     // Una cuenta guardada antes de que existiera este dato no trae el campo, y
     // entonces se entra como siempre: solo un cierre expreso deja fuera.
     sesion.dentro = dato.sesionAbierta !== false;
-  } catch (e) { /* almacenamiento bloqueado o dato corrupto: se empieza fuera */ }
+  } catch { /* almacenamiento bloqueado o dato corrupto: se empieza fuera */ }
 };
 
 const iniciales = (nombre) => nombre.split(/\s+/).filter(Boolean).slice(0, 2)

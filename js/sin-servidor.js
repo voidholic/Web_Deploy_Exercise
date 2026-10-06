@@ -1,7 +1,7 @@
 // Generado por herramientas/empaquetar.mjs: no se edita a mano.
 // Es el mismo codigo de js/, en un solo archivo y con el catalogo dentro,
 // para que index.html funcione abierto con doble clic.
-var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes","precio":0.25,"foto":"assets/img/productos/pan-redondo","alt":"Pan redondo de corteza dorada y brillante sobre papel blanco","etiqueta":{"color":"green","texto":"De la casa"}},{"nombre":"Pan enrollado","categoria":"panes","precio":0.35,"foto":"assets/img/productos/pan-enrollado","alt":"Pan enrollado en forma de media luna, dorado y hojaldrado"},{"nombre":"Palanqueta","categoria":"panes","precio":0.5,"foto":"assets/img/productos/palanqueta","alt":"Palanqueta alargada de corteza crujiente con cortes en la superficie","disponible":false},{"nombre":"Empanada de queso","categoria":"panes","precio":0.75,"foto":"assets/img/productos/pan-con-queso","alt":"Empanada de queso con borde repulgado y azúcar glas","etiqueta":{"color":"yellow","texto":"Recién hecho"}},{"nombre":"Pan de chocolate","categoria":"panes","precio":0.85,"foto":"assets/img/productos/pan-de-chocolate","alt":"Pan de chocolate partido por la mitad, con el relleno de chocolate a la vista"},{"nombre":"Pan redondo dulce","categoria":"panes","precio":0.4,"foto":"assets/img/productos/pan-redondo-dulce","alt":"Pan redondo dulce y brillante con grageas de colores encima","etiqueta":{"color":"green","texto":"Dulce de siempre"}},{"nombre":"Suspiros","categoria":"dulces","precio":0.75,"foto":"assets/img/productos/suspiros","alt":"Suspiro de merengue blanco en espiral sobre papel","disponible":false},{"nombre":"Galletas","categoria":"dulces","precio":1,"foto":"assets/img/productos/galletas","alt":"Galleta con chispas de chocolate sobre papel blanco"},{"nombre":"Rebanada de pastel de chocolate","categoria":"dulces","precio":1.75,"foto":"assets/img/productos/rebanada-de-pastel-de-chocolate","alt":"Rebanada de pastel de chocolate de tres capas con cobertura de chocolate"},{"nombre":"Rebanada de pastel de vainilla","categoria":"dulces","precio":1.5,"foto":"assets/img/productos/rebanada-de-pastel-de-vainilla","alt":"Rebanada de pastel de vainilla de tres capas con crema blanca"},{"nombre":"Rebanada de cheesecake de limón","categoria":"dulces","precio":2,"foto":"assets/img/productos/rebanada-de-cheesecake-de-limon","alt":"Rebanada de cheesecake de limón con base de galleta, una rodaja de limón y ralladura encima"},{"nombre":"Coca-Cola","categoria":"bebidas-frias","precio":0.85,"foto":"assets/img/productos/coca-cola","alt":"Botella de vidrio de Coca-Cola sobre papel blanco","etiqueta":{"color":"yellow","texto":"Para llevar"},"tamanos":[{"valor":"500 ml","precio":0.85},{"valor":"1 L","precio":1.25},{"valor":"2 L","precio":2}]},{"nombre":"Fanta","categoria":"bebidas-frias","precio":0.85,"foto":"assets/img/productos/fanta","alt":"Botella de Fanta de naranja sobre papel blanco","tamanos":[{"valor":"500 ml","precio":0.85},{"valor":"1 L","precio":1.25}]},{"nombre":"Sprite","categoria":"bebidas-frias","precio":0.85,"foto":"assets/img/productos/sprite","alt":"Botella de Sprite sobre papel blanco","tamanos":[{"valor":"500 ml","precio":0.85},{"valor":"1 L","precio":1.25}]},{"nombre":"Agua","categoria":"bebidas-frias","precio":0.5,"foto":"assets/img/productos/agua","alt":"Botella de agua sin gas sobre papel blanco","tamanos":[{"valor":"500 ml","precio":0.5},{"valor":"1 L","precio":0.75}]},{"nombre":"Powerade","categoria":"bebidas-frias","precio":1.25,"foto":"assets/img/productos/powerade","alt":"Botella de Powerade azul de tapa negra","disponible":false,"tamanos":[{"valor":"500 ml","precio":1.25},{"valor":"1 L","precio":1.75}]},{"nombre":"Avena polaca","categoria":"bebidas-frias","precio":0.75,"foto":"assets/img/productos/avena-polaca","alt":"Vaso de Avena Polaca con su etiqueta roja y blanca","tamanos":[{"valor":"300 ml","precio":0.75},{"valor":"500 ml","precio":1.25}]}]};
+var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes","precio":0.25,"foto":"assets/img/productos/pan-redondo","descripcion":"Pan de corteza dorada y miga suave, horneado cada mañana.","alt":"Pan redondo de corteza dorada y brillante sobre papel blanco","etiqueta":{"color":"green","texto":"De la casa"}},{"nombre":"Pan enrollado","categoria":"panes","precio":0.35,"foto":"assets/img/productos/pan-enrollado","descripcion":"Masa hojaldrada enrollada, ligera y dorada al horno.","alt":"Pan enrollado en forma de media luna, dorado y hojaldrado"},{"nombre":"Palanqueta","categoria":"panes","precio":0.5,"foto":"assets/img/productos/palanqueta","descripcion":"Pan alargado de corteza crujiente y miga consistente.","alt":"Palanqueta alargada de corteza crujiente con cortes en la superficie","disponible":false},{"nombre":"Empanada de queso","categoria":"panes","precio":0.75,"foto":"assets/img/productos/pan-con-queso","descripcion":"Empanada horneada rellena de queso y espolvoreada con azúcar.","alt":"Empanada de queso con borde repulgado y azúcar glas","etiqueta":{"color":"yellow","texto":"Recién hecho"}},{"nombre":"Pan de chocolate","categoria":"panes","precio":0.85,"foto":"assets/img/productos/pan-de-chocolate","descripcion":"Pan tierno con relleno de chocolate, ideal para disfrutar caliente.","alt":"Pan de chocolate partido por la mitad, con el relleno de chocolate a la vista"},{"nombre":"Pan redondo dulce","categoria":"panes","precio":0.4,"foto":"assets/img/productos/pan-redondo-dulce","descripcion":"Pan dulce tradicional decorado con grageas de colores.","alt":"Pan redondo dulce y brillante con grageas de colores encima","etiqueta":{"color":"green","texto":"Dulce de siempre"}},{"nombre":"Suspiros","categoria":"dulces","precio":0.75,"foto":"assets/img/productos/suspiros","descripcion":"Suspiros de merengue ligeros, crujientes por fuera y suaves por dentro.","alt":"Suspiro de merengue blanco en espiral sobre papel","disponible":false},{"nombre":"Galletas","categoria":"dulces","precio":1,"foto":"assets/img/productos/galletas","descripcion":"Galletas horneadas con chispas de chocolate.","alt":"Galleta con chispas de chocolate sobre papel blanco"},{"nombre":"Rebanada de pastel de chocolate","categoria":"dulces","precio":1.75,"foto":"assets/img/productos/rebanada-de-pastel-de-chocolate","descripcion":"Pastel de chocolate en capas con cobertura cremosa.","alt":"Rebanada de pastel de chocolate de tres capas con cobertura de chocolate"},{"nombre":"Rebanada de pastel de vainilla","categoria":"dulces","precio":1.5,"foto":"assets/img/productos/rebanada-de-pastel-de-vainilla","descripcion":"Bizcocho de vainilla en capas con crema suave.","alt":"Rebanada de pastel de vainilla de tres capas con crema blanca"},{"nombre":"Rebanada de cheesecake de limón","categoria":"dulces","precio":2,"foto":"assets/img/productos/rebanada-de-cheesecake-de-limon","descripcion":"Cheesecake cremoso de limón sobre una base de galleta.","alt":"Rebanada de cheesecake de limón con base de galleta, una rodaja de limón y ralladura encima"},{"nombre":"Coca-Cola","categoria":"bebidas-frias","precio":0.85,"foto":"assets/img/productos/coca-cola","descripcion":"Bebida gaseosa fría disponible en tres tamaños.","alt":"Botella de vidrio de Coca-Cola sobre papel blanco","etiqueta":{"color":"yellow","texto":"Para llevar"},"tamanos":[{"valor":"500 ml","precio":0.85},{"valor":"1 L","precio":1.25},{"valor":"2 L","precio":2}]},{"nombre":"Fanta","categoria":"bebidas-frias","precio":0.85,"foto":"assets/img/productos/fanta","descripcion":"Bebida gaseosa sabor naranja, disponible en dos tamaños.","alt":"Botella de Fanta de naranja sobre papel blanco","tamanos":[{"valor":"500 ml","precio":0.85},{"valor":"1 L","precio":1.25}]},{"nombre":"Sprite","categoria":"bebidas-frias","precio":0.85,"foto":"assets/img/productos/sprite","descripcion":"Bebida gaseosa refrescante disponible en dos tamaños.","alt":"Botella de Sprite sobre papel blanco","tamanos":[{"valor":"500 ml","precio":0.85},{"valor":"1 L","precio":1.25}]},{"nombre":"Agua","categoria":"bebidas-frias","precio":0.5,"foto":"assets/img/productos/agua","descripcion":"Agua sin gas para acompañar tu pedido.","alt":"Botella de agua sin gas sobre papel blanco","tamanos":[{"valor":"500 ml","precio":0.5},{"valor":"1 L","precio":0.75}]},{"nombre":"Powerade","categoria":"bebidas-frias","precio":1.25,"foto":"assets/img/productos/powerade","descripcion":"Bebida hidratante fría disponible en dos tamaños.","alt":"Botella de Powerade azul de tapa negra","disponible":false,"tamanos":[{"valor":"500 ml","precio":1.25},{"valor":"1 L","precio":1.75}]},{"nombre":"Avena polaca","categoria":"bebidas-frias","precio":0.75,"foto":"assets/img/productos/avena-polaca","descripcion":"Avena polaca servida fría, disponible en dos tamaños.","alt":"Vaso de Avena Polaca con su etiqueta roja y blanca","tamanos":[{"valor":"300 ml","precio":0.75},{"valor":"500 ml","precio":1.25}]}]};
 (() => {
   // js/repo.js
   var RUTA = "data/productos.json";
@@ -9,6 +9,7 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
     const donde = p && p.nombre ? `"${p.nombre}"` : `el producto numero ${i + 1}`;
     if (!p || typeof p !== "object") throw new Error(`${donde} no es un producto`);
     if (typeof p.nombre !== "string" || !p.nombre.trim()) throw new Error(`a ${donde} le falta el nombre`);
+    if (typeof p.descripcion !== "string" || !p.descripcion.trim()) throw new Error(`a ${donde} le falta la descripcion`);
     if (typeof p.categoria !== "string" || !p.categoria.trim()) throw new Error(`a ${donde} le falta la categoria`);
     if (!Number.isFinite(p.precio) || p.precio < 0) throw new Error(`${donde} no tiene un precio valido`);
     if (typeof p.foto !== "string" || !p.foto) throw new Error(`a ${donde} le falta la foto`);
@@ -30,6 +31,7 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
   };
   var normalizar = (p) => ({
     nombre: p.nombre.trim(),
+    descripcion: p.descripcion.trim(),
     categoria: p.categoria.trim(),
     precio: p.precio,
     foto: p.foto,
@@ -556,7 +558,7 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
   var marcarActualizacion = (cuando = /* @__PURE__ */ new Date()) => {
     try {
       document.cookie = `${COOKIE}=${encodeURIComponent(cuando.toISOString())}; path=/; max-age=${UN_MES}; SameSite=Lax`;
-    } catch (e) {
+    } catch {
     }
     return cuando;
   };
@@ -566,14 +568,14 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
       if (!trozo) return null;
       const fecha = new Date(decodeURIComponent(trozo.slice(COOKIE.length + 1)));
       return Number.isNaN(fecha.getTime()) ? null : fecha;
-    } catch (e) {
+    } catch {
       return null;
     }
   };
   var olvidarMarca = () => {
     try {
       document.cookie = `${COOKIE}=; path=/; max-age=0; SameSite=Lax`;
-    } catch (e) {
+    } catch {
     }
   };
   var marcaBonita = (fecha) => {
@@ -592,7 +594,7 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
   var recordarVista = (vista2) => {
     try {
       window.sessionStorage.setItem(CLAVE_VISTA, JSON.stringify(vista2));
-    } catch (e) {
+    } catch {
     }
   };
   var vistaRecordada = () => {
@@ -601,7 +603,7 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
       if (!crudo) return null;
       const v = JSON.parse(crudo);
       return v && typeof v === "object" ? v : null;
-    } catch (e) {
+    } catch {
       return null;
     }
   };
@@ -652,14 +654,22 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
   var pedidosGuardados = async (tope = A_LA_VISTA) => {
     try {
       const db = await abrir();
-      const todos = await new Promise((listo2, falla) => {
+      return await new Promise((listo2, falla) => {
+        const recientes = [];
         const t = db.transaction(ALMACEN, "readonly");
-        const pet = t.objectStore(ALMACEN).getAll();
-        pet.onsuccess = () => listo2(pet.result || []);
+        const pet = t.objectStore(ALMACEN).index("fecha").openCursor(null, "prev");
+        pet.onsuccess = () => {
+          const cursor = pet.result;
+          if (!cursor || recientes.length >= tope) {
+            listo2(recientes);
+            return;
+          }
+          recientes.push(cursor.value);
+          cursor.continue();
+        };
         pet.onerror = () => falla(pet.error);
       });
-      return todos.sort((a, b) => String(b.fecha).localeCompare(String(a.fecha))).slice(0, tope);
-    } catch (e) {
+    } catch {
       return [];
     }
   };
@@ -693,7 +703,7 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
   };
   var fichaHtml = (p) => {
     const srcset = ANCHOS.map((w) => `${foto(p, w)} ${w}w`).join(", ");
-    return `<article class="product-card"${p.disponible ? "" : ' data-available="false"'} data-category="${escapar(p.categoria)}"><div class="product-image"><img src="${foto(p, 840)}" srcset="${srcset}" sizes="${SIZES}" alt="${escapar(p.alt)}" loading="lazy" width="700" height="520">` + etiquetaHtml(p) + `</div><div class="product-info"><h3>${escapar(p.nombre)}</h3>` + tamanosHtml(p) + `<div class="product-bottom"><strong>${dinero(p.precio)}</strong>${fondoHtml(p)}</div></div></article>`;
+    return `<article class="product-card"${p.disponible ? "" : ' data-available="false"'} data-category="${escapar(p.categoria)}"><div class="product-image"><img src="${foto(p, 840)}" srcset="${srcset}" sizes="${SIZES}" alt="${escapar(p.alt)}" loading="lazy" width="700" height="520">` + etiquetaHtml(p) + `</div><div class="product-info"><h3>${escapar(p.nombre)}</h3><p>${escapar(p.descripcion)}</p>` + tamanosHtml(p) + `<div class="product-bottom"><strong>${dinero(p.precio)}</strong>${fondoHtml(p)}</div></div></article>`;
   };
   var products = [];
   var pintarFichas = (productos) => {
@@ -1221,7 +1231,7 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
         })
       });
       return r.ok;
-    } catch (e) {
+    } catch {
       return false;
     }
   };
@@ -1401,7 +1411,7 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
     }
     try {
       input.setSelectionRange(pos, pos);
-    } catch (e) {
+    } catch {
     }
   };
   var grupos4 = (d) => d.slice(0, 16).replace(/(\d{4})(?=\d)/g, "$1 ");
@@ -1426,7 +1436,7 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
     let hecho;
     try {
       hecho = document.execCommand("copy");
-    } catch (e) {
+    } catch {
       hecho = false;
     }
     temporal.remove();
@@ -1641,7 +1651,7 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
         if (!navigator.clipboard) throw new Error("sin portapapeles");
         await navigator.clipboard.writeText(texto);
         hecho = true;
-      } catch (e) {
+      } catch {
         hecho = respaldoCopiar(texto);
       }
       reciboCopiado.hidden = false;
@@ -1715,7 +1725,7 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
           entrega.punto = { lat: p.lat, lng: p.lng };
         }
       }
-    } catch (e) {
+    } catch {
     }
   };
   var guardar = () => {
@@ -1732,14 +1742,14 @@ var CATALOGO_EMBEBIDO = {"productos":[{"nombre":"Pan redondo","categoria":"panes
         factura: { ...factura },
         guardado: cuando.toISOString()
       }));
-    } catch (e) {
+    } catch {
     }
     puente.pintarGuardado?.(cuando);
   };
   var borrarGuardado = () => {
     try {
       window.localStorage.removeItem(CLAVE);
-    } catch (e) {
+    } catch {
     }
     olvidarMarca();
     puente.pintarGuardado?.(null);
@@ -2605,14 +2615,14 @@ Caduca cuando pidas otro. No lo compartas con nadie: nadie de El Tradicional te 
         verificado: sesion.verificado,
         sesionAbierta: sesion.dentro
       }));
-    } catch (e) {
+    } catch {
     }
   };
   var correoGuardado = () => {
     try {
       const crudo = window.localStorage.getItem(CLAVE_CUENTA);
       return crudo ? String(JSON.parse(crudo).correo || "") : "";
-    } catch (e) {
+    } catch {
       return "";
     }
   };
@@ -2628,7 +2638,7 @@ Caduca cuando pidas otro. No lo compartas con nadie: nadie de El Tradicional te 
       sesion.direccion = String(dato.direccion || "").slice(0, 200);
       sesion.verificado = dato.verificado === true;
       sesion.dentro = dato.sesionAbierta !== false;
-    } catch (e) {
+    } catch {
     }
   };
   var iniciales = (nombre) => nombre.split(/\s+/).filter(Boolean).slice(0, 2).map((parte) => parte[0].toUpperCase()).join("");

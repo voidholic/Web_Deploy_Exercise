@@ -79,6 +79,7 @@ const fichaHtml = (p) => {
     + '</div>'
     + '<div class="product-info">'
     + `<h3>${escapar(p.nombre)}</h3>`
+    + `<p>${escapar(p.descripcion)}</p>`
     + tamanosHtml(p)
     + `<div class="product-bottom"><strong>${dinero(p.precio)}</strong>${fondoHtml(p)}</div>`
     + '</div></article>';

@@ -30,7 +30,7 @@ const marcarActualizacion = (cuando = new Date()) => {
   try {
     document.cookie = `${COOKIE}=${encodeURIComponent(cuando.toISOString())}`
       + `; path=/; max-age=${UN_MES}; SameSite=Lax`;
-  } catch (e) { /* sin cookies no hay marca; el pedido se guarda igual */ }
+  } catch { /* sin cookies no hay marca; el pedido se guarda igual */ }
   return cuando;
 };
 
@@ -42,12 +42,12 @@ const ultimaActualizacion = () => {
     // Una cookie la puede tocar cualquiera a mano: si lo que hay dentro no es
     // una fecha, es como no tener ninguna.
     return Number.isNaN(fecha.getTime()) ? null : fecha;
-  } catch (e) { return null; }
+  } catch { return null; }
 };
 
 const olvidarMarca = () => {
   try { document.cookie = `${COOKIE}=; path=/; max-age=0; SameSite=Lax`; }
-  catch (e) { /* si no se pudo escribir, no hay nada que borrar */ }
+  catch { /* si no se pudo escribir, no hay nada que borrar */ }
 };
 
 // "hoy a las 14:05" dice mas que una fecha entera: lo que importa de lo
@@ -74,7 +74,7 @@ const CLAVE_VISTA = 'eltradicional-vista';
 
 const recordarVista = (vista) => {
   try { window.sessionStorage.setItem(CLAVE_VISTA, JSON.stringify(vista)); }
-  catch (e) { /* en ventana privada no se recuerda; la vista sale como de nuevas */ }
+  catch { /* en ventana privada no se recuerda; la vista sale como de nuevas */ }
 };
 
 const vistaRecordada = () => {
@@ -83,7 +83,7 @@ const vistaRecordada = () => {
     if (!crudo) return null;
     const v = JSON.parse(crudo);
     return v && typeof v === 'object' ? v : null;
-  } catch (e) { return null; }
+  } catch { return null; }
 };
 
 // ---- Los pedidos ya hechos (IndexedDB) -------------------------------
@@ -153,16 +153,22 @@ const guardarPedido = async (recibo) => {
 const pedidosGuardados = async (tope = A_LA_VISTA) => {
   try {
     const db = await abrir();
-    const todos = await new Promise((listo, falla) => {
+    return await new Promise((listo, falla) => {
+      const recientes = [];
       const t = db.transaction(ALMACEN, 'readonly');
-      const pet = t.objectStore(ALMACEN).getAll();
-      pet.onsuccess = () => listo(pet.result || []);
+      const pet = t.objectStore(ALMACEN).index('fecha').openCursor(null, 'prev');
+      pet.onsuccess = () => {
+        const cursor = pet.result;
+        if (!cursor || recientes.length >= tope) {
+          listo(recientes);
+          return;
+        }
+        recientes.push(cursor.value);
+        cursor.continue();
+      };
       pet.onerror = () => falla(pet.error);
     });
-    return todos
-      .sort((a, b) => String(b.fecha).localeCompare(String(a.fecha)))
-      .slice(0, tope);
-  } catch (e) { return []; }
+  } catch { return []; }
 };
 
 export {

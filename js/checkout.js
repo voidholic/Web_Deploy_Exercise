@@ -344,7 +344,7 @@ const reformatear = (input, agrupar) => {
     if (/\d/.test(input.value[pos])) vistos += 1;
     pos += 1;
   }
-  try { input.setSelectionRange(pos, pos); } catch (e) { /* el campo puede no estar enfocado */ }
+  try { input.setSelectionRange(pos, pos); } catch { /* el campo puede no estar enfocado */ }
 };
 const grupos4 = (d) => d.slice(0, 16).replace(/(\d{4})(?=\d)/g, '$1 ');
 const mmaa = (d) => (d.length > 2 ? `${d.slice(0, 2)}/${d.slice(2, 4)}` : d);
@@ -366,7 +366,7 @@ const respaldoCopiar = (texto) => {
   document.body.append(temporal);
   temporal.select();
   let hecho;
-  try { hecho = document.execCommand('copy'); } catch (e) { hecho = false; }
+  try { hecho = document.execCommand('copy'); } catch { hecho = false; }
   temporal.remove();
   return hecho;
 };
@@ -627,7 +627,7 @@ const montarPago = (elPanel) => {
       if (!navigator.clipboard) throw new Error('sin portapapeles');
       await navigator.clipboard.writeText(texto);
       hecho = true;
-    } catch (e) {
+    } catch {
       hecho = respaldoCopiar(texto);
     }
     reciboCopiado.hidden = false;

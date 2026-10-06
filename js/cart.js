@@ -51,7 +51,7 @@ const leerGuardado = () => {
         entrega.punto = { lat: p.lat, lng: p.lng };
       }
     }
-  } catch (e) { /* almacenamiento bloqueado o dato corrupto: se empieza vacio */ }
+  } catch { /* almacenamiento bloqueado o dato corrupto: se empieza vacio */ }
 };
 const guardar = () => {
   // Cuando se guardo va en dos sitios a la vez, y no por descuido: dentro del
@@ -71,11 +71,11 @@ const guardar = () => {
       factura: { ...factura },
       guardado: cuando.toISOString(),
     }));
-  } catch (e) { /* en ventana privada no se puede guardar; el pedido sigue vivo en memoria */ }
+  } catch { /* en ventana privada no se puede guardar; el pedido sigue vivo en memoria */ }
   puente.pintarGuardado?.(cuando);
 };
 const borrarGuardado = () => {
-  try { window.localStorage.removeItem(CLAVE); } catch (e) { /* si no se pudo guardar, no hay nada que borrar */ }
+  try { window.localStorage.removeItem(CLAVE); } catch { /* si no se pudo guardar, no hay nada que borrar */ }
   // Sin pedido guardado no hay nada de que dar la fecha: dejar la marca puesta
   // seria decir en el pie que se guardo algo que ya no esta.
   olvidarMarca();

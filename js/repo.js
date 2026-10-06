@@ -16,6 +16,7 @@ const revisar = (p, i) => {
   const donde = p && p.nombre ? `"${p.nombre}"` : `el producto numero ${i + 1}`;
   if (!p || typeof p !== 'object') throw new Error(`${donde} no es un producto`);
   if (typeof p.nombre !== 'string' || !p.nombre.trim()) throw new Error(`a ${donde} le falta el nombre`);
+  if (typeof p.descripcion !== 'string' || !p.descripcion.trim()) throw new Error(`a ${donde} le falta la descripcion`);
   if (typeof p.categoria !== 'string' || !p.categoria.trim()) throw new Error(`a ${donde} le falta la categoria`);
   if (!Number.isFinite(p.precio) || p.precio < 0) throw new Error(`${donde} no tiene un precio valido`);
   // La foto es la raiz del nombre del archivo, sin ancho ni extension: de
@@ -50,6 +51,7 @@ const revisar = (p, i) => {
 // esta disponible, y uno sin tamanos viene en uno solo.
 const normalizar = (p) => ({
   nombre: p.nombre.trim(),
+  descripcion: p.descripcion.trim(),
   categoria: p.categoria.trim(),
   precio: p.precio,
   foto: p.foto,

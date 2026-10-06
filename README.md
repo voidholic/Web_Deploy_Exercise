@@ -13,7 +13,7 @@ assets/
   img/                logo, mascota, iconos y la foto de portada
     productos/        las fotos del catalogo, cada una en 420 y 840 px
 data/
-  productos.json      el catalogo: nombre, precio, foto, categoria y tamanos
+  productos.json      el catalogo: nombre, descripcion, precio, foto y tamanos
 js/
   app.js              el arranque: trae los datos y enciende lo demas
   repo.js             lee y revisa data/productos.json
@@ -30,13 +30,17 @@ js/
                       (generado; es lo que corre al abrir index.html con doble clic)
 herramientas/
   empaquetar.mjs      genera js/sin-servidor.js
+.github/workflows/
+  ci-cd.yml           valida y publica en GitHub Pages
 ```
 
-## Con que esta hecho
+## Tecnologias
 
-Sin dependencias: lo que hay en el repositorio es lo que corre en el
-navegador. La unica pieza generada es `js/sin-servidor.js`, para abrir el sitio
-sin servidor (ver abajo).
+El sitio no necesita paquetes instalados para funcionar en el navegador. Usa
+HTML, CSS y modulos JavaScript nativos; la unica pieza generada es
+`js/sin-servidor.js`, que permite abrirlo directamente como archivo. Para
+regenerarlo al cambiar el codigo o el catalogo se necesita Node.js y esbuild,
+que `herramientas/empaquetar.mjs` ejecuta con `npx`.
 
 - **HTML5 semantico.** `header`, `nav`, `main`, `footer` y `section`; los
   dialogos de la canasta y de la cuenta son `aside` con `role="dialog"`.
@@ -80,15 +84,35 @@ Funciona de tres formas, sin servidor dinamico en ninguna:
 
 Servida por HTTP, la pagina carga los modulos de `js/` de siempre.
 
+## Preparar la entrega y publicar en Neocities
+
+Para generar el ZIP desde PowerShell en la carpeta del proyecto, ejecuta:
+
+```powershell
+$elementos = Get-ChildItem -Force | Where-Object { $_.Name -notin @('.git', 'Reto1_Efrain_Brito.zip') }
+Compress-Archive -Path $elementos.FullName -DestinationPath .\Reto1_Efrain_Brito.zip -Force
+```
+
+El archivo incluye el sitio, sus recursos, los datos, los modulos y la
+documentacion, pero no la carpeta interna de Git. Sube `Reto1_Efrain_Brito.zip`
+al aula virtual.
+
+Para Neocities, descomprime el ZIP y sube el contenido del proyecto conservando
+las rutas: `index.html`, `assets/`, `data/` y `js/`. No cambies la estructura ni
+subas `index.html` dentro de una carpeta adicional; debe quedar en la raiz del
+sitio. El catalogo se carga desde el JSON al publicarlo en un hosting estatico.
+
 ## Para tocar el catalogo
 
 Meter, quitar o cambiar un producto es editar `data/productos.json`: las
-fichas se pintan desde ahi. Despues hay que correr
+fichas se pintan desde ahi. Cada elemento requiere `nombre`, `descripcion`,
+`categoria`, `precio`, `foto` y `alt`; opcionalmente admite `disponible`,
+`etiqueta` y `tamanos`. Despues hay que correr
 `node herramientas/empaquetar.mjs`, para que la version de doble clic lleve el
 catalogo nuevo; lo mismo al tocar cualquier archivo de `js/`. El CI lo
-comprueba y no publica si se olvida. Cada producto necesita `nombre`, `categoria`,
-`precio`, `foto` y `alt`; `disponible: false` lo marca como agotado, `etiqueta`
-le pone el rotulo de color y `tamanos` le da varias medidas con su precio.
+comprueba y no publica si se olvida. `disponible: false` marca un producto como
+agotado, `etiqueta` le pone el rotulo de color y `tamanos` le da varias medidas
+con su precio.
 
 El campo `foto` es la raiz del nombre del archivo, sin ancho ni extension: de
 `assets/img/productos/pan-redondo` salen `pan-redondo-420.jpg` y
@@ -131,8 +155,8 @@ quien todavia no ha pedido nada.
 - **Teclado.** Todo se puede usar sin raton. Los dos dialogos -canasta y
   cuenta- atrapan el foco mientras estan abiertos, se cierran con `Escape` y lo
   devuelven al boton que los abrio. El menu de Tienda se recorre con las
-  flechas. Hay un enlace para saltar al contenido. En `ACCESIBILIDAD_TECLADO.md`
-  esta el recorrido completo.
+  flechas. Hay un enlace para saltar al contenido y los paneles devuelven el
+  foco al control que los abrio.
 - **Foco visible.** Ningun `outline: none` sin reemplazo: el foco se marca con
   un anillo propio, y se usa `:focus-visible` para no ensenarlo al pulsar con
   el raton.

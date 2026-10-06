@@ -39,7 +39,7 @@ const enviarCorreo = async (para, nombre, asunto, cuerpo) => {
       }),
     });
     return r.ok;
-  } catch (e) {
+  } catch {
     // Sin red, con el dominio fuera de la lista o con la cuota del mes
     // agotada el envio falla. No es motivo para romper el registro ni el
     // pedido: se devuelve false y quien llama lo cuenta en pantalla.

@@ -5,6 +5,7 @@
       "categoria": "panes",
       "precio": 0.25,
       "foto": "assets/img/productos/pan-redondo",
+      "descripcion": "Pan de corteza dorada y miga suave, horneado cada mañana.",
       "alt": "Pan redondo de corteza dorada y brillante sobre papel blanco",
       "etiqueta": {
         "color": "green",
@@ -16,6 +17,7 @@
       "categoria": "panes",
       "precio": 0.35,
       "foto": "assets/img/productos/pan-enrollado",
+      "descripcion": "Masa hojaldrada enrollada, ligera y dorada al horno.",
       "alt": "Pan enrollado en forma de media luna, dorado y hojaldrado"
     },
     {
@@ -23,6 +25,7 @@
       "categoria": "panes",
       "precio": 0.5,
       "foto": "assets/img/productos/palanqueta",
+      "descripcion": "Pan alargado de corteza crujiente y miga consistente.",
       "alt": "Palanqueta alargada de corteza crujiente con cortes en la superficie",
       "disponible": false
     },
@@ -31,6 +34,7 @@
       "categoria": "panes",
       "precio": 0.75,
       "foto": "assets/img/productos/pan-con-queso",
+      "descripcion": "Empanada horneada rellena de queso y espolvoreada con azúcar.",
       "alt": "Empanada de queso con borde repulgado y azúcar glas",
       "etiqueta": {
         "color": "yellow",
@@ -42,6 +46,7 @@
       "categoria": "panes",
       "precio": 0.85,
       "foto": "assets/img/productos/pan-de-chocolate",
+      "descripcion": "Pan tierno con relleno de chocolate, ideal para disfrutar caliente.",
       "alt": "Pan de chocolate partido por la mitad, con el relleno de chocolate a la vista"
     },
     {
@@ -49,6 +54,7 @@
       "categoria": "panes",
       "precio": 0.4,
       "foto": "assets/img/productos/pan-redondo-dulce",
+      "descripcion": "Pan dulce tradicional decorado con grageas de colores.",
       "alt": "Pan redondo dulce y brillante con grageas de colores encima",
       "etiqueta": {
         "color": "green",
@@ -60,6 +66,7 @@
       "categoria": "dulces",
       "precio": 0.75,
       "foto": "assets/img/productos/suspiros",
+      "descripcion": "Suspiros de merengue ligeros, crujientes por fuera y suaves por dentro.",
       "alt": "Suspiro de merengue blanco en espiral sobre papel",
       "disponible": false
     },
@@ -68,6 +75,7 @@
       "categoria": "dulces",
       "precio": 1,
       "foto": "assets/img/productos/galletas",
+      "descripcion": "Galletas horneadas con chispas de chocolate.",
       "alt": "Galleta con chispas de chocolate sobre papel blanco"
     },
     {
@@ -75,6 +83,7 @@
       "categoria": "dulces",
       "precio": 1.75,
       "foto": "assets/img/productos/rebanada-de-pastel-de-chocolate",
+      "descripcion": "Pastel de chocolate en capas con cobertura cremosa.",
       "alt": "Rebanada de pastel de chocolate de tres capas con cobertura de chocolate"
     },
     {
@@ -82,6 +91,7 @@
       "categoria": "dulces",
       "precio": 1.5,
       "foto": "assets/img/productos/rebanada-de-pastel-de-vainilla",
+      "descripcion": "Bizcocho de vainilla en capas con crema suave.",
       "alt": "Rebanada de pastel de vainilla de tres capas con crema blanca"
     },
     {
@@ -89,6 +99,7 @@
       "categoria": "dulces",
       "precio": 2,
       "foto": "assets/img/productos/rebanada-de-cheesecake-de-limon",
+      "descripcion": "Cheesecake cremoso de limón sobre una base de galleta.",
       "alt": "Rebanada de cheesecake de limón con base de galleta, una rodaja de limón y ralladura encima"
     },
     {
@@ -96,6 +107,7 @@
       "categoria": "bebidas-frias",
       "precio": 0.85,
       "foto": "assets/img/productos/coca-cola",
+      "descripcion": "Bebida gaseosa fría disponible en tres tamaños.",
       "alt": "Botella de vidrio de Coca-Cola sobre papel blanco",
       "etiqueta": {
         "color": "yellow",
@@ -121,6 +133,7 @@
       "categoria": "bebidas-frias",
       "precio": 0.85,
       "foto": "assets/img/productos/fanta",
+      "descripcion": "Bebida gaseosa sabor naranja, disponible en dos tamaños.",
       "alt": "Botella de Fanta de naranja sobre papel blanco",
       "tamanos": [
         {
@@ -138,6 +151,7 @@
       "categoria": "bebidas-frias",
       "precio": 0.85,
       "foto": "assets/img/productos/sprite",
+      "descripcion": "Bebida gaseosa refrescante disponible en dos tamaños.",
       "alt": "Botella de Sprite sobre papel blanco",
       "tamanos": [
         {
@@ -155,6 +169,7 @@
       "categoria": "bebidas-frias",
       "precio": 0.5,
       "foto": "assets/img/productos/agua",
+      "descripcion": "Agua sin gas para acompañar tu pedido.",
       "alt": "Botella de agua sin gas sobre papel blanco",
       "tamanos": [
         {
@@ -172,6 +187,7 @@
       "categoria": "bebidas-frias",
       "precio": 1.25,
       "foto": "assets/img/productos/powerade",
+      "descripcion": "Bebida hidratante fría disponible en dos tamaños.",
       "alt": "Botella de Powerade azul de tapa negra",
       "disponible": false,
       "tamanos": [
@@ -190,6 +206,7 @@
       "categoria": "bebidas-frias",
       "precio": 0.75,
       "foto": "assets/img/productos/avena-polaca",
+      "descripcion": "Avena polaca servida fría, disponible en dos tamaños.",
       "alt": "Vaso de Avena Polaca con su etiqueta roja y blanca",
       "tamanos": [
         {
