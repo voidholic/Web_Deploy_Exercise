@@ -31,7 +31,7 @@ js/
 herramientas/
   empaquetar.mjs      genera js/sin-servidor.js
 .github/workflows/
-  ci-cd.yml           valida y publica en GitHub Pages
+  ci-cd.yml           valida y publica en GitHub Pages al subir cambios
 ```
 
 ## Tecnologias
@@ -83,6 +83,8 @@ Funciona de tres formas, sin servidor dinamico en ninguna:
   archivos tal cual.
 
 Servida por HTTP, la pagina carga los modulos de `js/` de siempre.
+El workflow valida y publica automaticamente cada push a `main`; tambien se
+puede iniciar manualmente desde la pestana Actions de GitHub.
 
 ## Preparar la entrega y publicar en Neocities
 
